@@ -30,5 +30,13 @@ pipeline {
             }
         }
         
+        stage('Release') {
+            steps {
+                script {
+                    sh 'mvn -version'
+                }
+            }
+        }
+        
     }
 }
